@@ -58,11 +58,11 @@ function draw(){
     text("Use buttons to add and feed the food", 500, 20);
 
     var currentTime = hour();
-    if (currentTime === (Lastfeed)/* || currentTime === (Lastfeed + 1)*/){
+    if (currentTime === (Lastfeed) || currentTime === (Lastfeed + 1)){
         updateState("Playing");
         foodObject.garden();
     }
-    else if (currentTime === (Lastfeed + 1)){
+    else if (currentTime === (Lastfeed + 2)){
         updateState("Sleeping");
         foodObject.bedroom();
     }
